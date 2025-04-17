@@ -9,7 +9,7 @@ namespace Mono_Game_1___Assignment
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        Texture2D robloxoffice2Texture, zsaqr19_3Texture, baconhairTexture;
+        Texture2D robloxoffice2Texture, zsaqr19_3Texture,friendsTexture, friends1Texture, friends2Texture;
 
 
         public Game1()
@@ -38,7 +38,9 @@ namespace Mono_Game_1___Assignment
             // TODO: use this.Content to load your game content here
             robloxoffice2Texture = Content.Load<Texture2D>("robloxoffice2");
             zsaqr19_3Texture = Content.Load<Texture2D>("zsaqr19_3");
-            baconhairTexture = Content.Load<Texture2D>("baconhair");
+            friendsTexture = Content.Load<Texture2D>("friends");
+            friends1Texture = Content.Load<Texture2D>("friends1");
+            friends2Texture = Content.Load<Texture2D>("friends2");
         }
 
         protected override void Update(GameTime gameTime)
@@ -60,9 +62,17 @@ namespace Mono_Game_1___Assignment
 
             _spriteBatch.Draw(robloxoffice2Texture, new Vector2(0, 0), Color.White);
 
+            _spriteBatch.Draw(friends1Texture, new Vector2(200, 150), Color.White);
+
+            _spriteBatch.Draw(friends2Texture, new Vector2(400, 150), Color.White);
+
             _spriteBatch.Draw(zsaqr19_3Texture, new Vector2(300, 150), Color.White);
 
-            _spriteBatch.Draw(baconhairTexture, new Vector2(100, 150),Color.White);
+            _spriteBatch.Draw(friendsTexture, new Vector2(0, 150), Color.White);
+
+            //_spriteBatch.Draw(friends1Texture, new Vector2(200, 150), Color.White);
+
+            //_spriteBatch.Draw(friends2Texture, new Vector2(50, 150), Color.White);
 
             _spriteBatch.End();
 
