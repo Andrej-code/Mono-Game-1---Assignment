@@ -25,7 +25,7 @@ namespace Mono_Game_1___Assignment
         {
             // TODO: Add your initialization logic here
             generator = new Random();
-            redguyLocation = new Vector2(generator.Next(0, 750), generator.Next(0, 550));
+            redguyLocation = new Vector2(generator.Next(0, 550), generator.Next(0, 450));
 
             _graphics.PreferredBackBufferWidth = 800;
             _graphics.PreferredBackBufferHeight = 600;
@@ -65,6 +65,7 @@ namespace Mono_Game_1___Assignment
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
+
 
             _spriteBatch.Draw(robloxoffice2Texture, new Vector2(0, 0), Color.White);
 
